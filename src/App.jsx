@@ -10,7 +10,6 @@ export default function App() {
   const [dark, setDark] = useState(false);
   const containerRef = useRef(null);
 
-  // Scroll to bottom when new message added
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
@@ -19,7 +18,7 @@ export default function App() {
 
   return (
     <div className={`${dark ? 'dark' : ''} w-full h-screen bg-gray-100 dark:bg-gray-900 transition-colors`}>
-      <div className="flex flex-col h-full max-w-md mx-auto border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden">
+      <div className="flex flex-col h-full max-w-md mx-auto border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <header className="flex items-center justify-between px-4 py-2 bg-blue-600 text-white dark:bg-gray-800">
           <h1 className="text-lg font-bold">ChatBot UI 🤖</h1>
           <button
