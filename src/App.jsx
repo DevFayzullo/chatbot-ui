@@ -7,7 +7,6 @@ export default function App() {
   const [messages, setMessages] = useState([
     { sender: 'bot', text: 'Salom! Yordam kerakmi?' }
   ]);
-  const [dark, setDark] = useState(false);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -17,24 +16,19 @@ export default function App() {
   }, [messages]);
 
   return (
-    <div className={`${dark ? 'dark' : ''} w-full h-screen bg-gray-100 dark:bg-gray-900 transition-colors`}>
-      <div className="flex flex-col h-full max-w-md mx-auto border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-        <header className="flex items-center justify-between px-4 py-2 bg-blue-600 text-white dark:bg-gray-800">
-          <h1 className="text-lg font-bold">ChatBot UI 🤖</h1>
-          <button
-            onClick={() => setDark(!dark)}
-            className="text-xs px-3 py-1 rounded bg-white text-gray-800 dark:bg-gray-600 dark:text-white shadow hover:opacity-80"
-          >
-            {dark ? '☀ Light Mode' : '🌙 Dark Mode'}
-          </button>
-        </header>
+  <div className="w-full h-screen bg-gray-100 dark:bg-gray-900 transition-colors">
+    <div className="flex align-items flex-col h-[95vh] w-full max-w-md mx-auto rounded-2xl shadow-xl overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <header className="px-4 py-3 bg-blue-600 text-white dark:bg-gray-800">
+        <h1 className="text-xl font-bold">ChatBot UI</h1>
+      </header>
 
-        <div ref={containerRef} className="flex-1 overflow-y-auto">
-          <ChatWindow messages={messages} />
-        </div>
-
-        <ButtonGroup setMessages={setMessages} />
+      <div ref={containerRef} className="flex-1 overflow-y-auto">
+        <ChatWindow messages={messages} />
       </div>
+
+      <ButtonGroup setMessages={setMessages} />
     </div>
-  );
+  </div>
+);
+
 }
