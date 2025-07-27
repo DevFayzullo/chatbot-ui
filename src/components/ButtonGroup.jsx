@@ -1,5 +1,3 @@
-// ButtonGroup.jsx
-import React from 'react';
 
 const predefinedResponses = {
   "Salom": "Salom! Qanday yordam bera olaman?",

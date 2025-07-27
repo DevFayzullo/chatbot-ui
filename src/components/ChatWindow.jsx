@@ -1,5 +1,4 @@
-// ChatWindow.jsx
-import React from 'react';
+
 
 export default function ChatWindow({ messages }) {
   return (
