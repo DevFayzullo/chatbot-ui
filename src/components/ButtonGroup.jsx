@@ -1,4 +1,3 @@
-
 const predefinedResponses = {
   "Salom": "Salom! Qanday yordam bera olaman?",
   "Xizmatlar": "Biz quyidagi xizmatlarni taklif qilamiz: ChatBot, Portfolio yaratish, Reels dizayn.",

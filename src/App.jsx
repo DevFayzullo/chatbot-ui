@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import ChatWindow from './components/ChatWindow';
 import ButtonGroup from './components/ButtonGroup';
