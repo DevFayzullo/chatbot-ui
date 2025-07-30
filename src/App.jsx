@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import ChatWindow from './components/ChatWindow';
 import ButtonGroup from './components/ButtonGroup';
 
@@ -15,7 +15,7 @@ export default function App() {
   }, [messages]);
 
   return (
-  <div className="w-full h-screen bg-gray-100 dark:bg-gray-900 transition-colors">
+  <div className="w-full h-screen bg-gray-100 dark:bg-gray-900 transition-colors flex flex-col">
     <div className="flex align-items flex-col h-[95vh] w-full max-w-md mx-auto rounded-2xl shadow-xl overflow-hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <header className="px-4 py-3 bg-blue-600 text-white dark:bg-gray-800">
         <h1 className="text-xl font-bold">ChatBot UI</h1>
