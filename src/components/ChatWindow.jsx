@@ -1,5 +1,3 @@
-
-
 export default function ChatWindow({ messages }) {
   return (
     <div className="flex flex-col p-4 space-y-4">
