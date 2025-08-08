@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "postbuild": "powershell Copy-Item -Path dist/index.html -Destination dist/404.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
