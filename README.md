@@ -3,7 +3,7 @@
 [🇰🇷 한국어 README](./README.kr.md)
 
 A **React-based** static chatbot interface with predefined responses.  
-Built with **Vite** and styled using **Tailwind CSS**, this project offers a modern, clean, and responsive user experience — perfect for portfolios and frontend practice.
+Built with **Vite** and styled using **Tailwind CSS**, this project offers a modern, clean, and responsive user experience — perfect for portfolios and Frontend practice.
 
 ## 🧠 Features
 
