@@ -30,5 +30,5 @@ export default function App() {
         <ButtonGroup setMessages={setMessages} />
       </div>
     </div>
-  );kk
+  );
 }
