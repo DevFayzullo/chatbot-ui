@@ -26,7 +26,7 @@ export default function InputBox({ setMessages }) {
 
     setTimeout(() => {
       const reply =
-        staticReplies[lowerInput] || "Sorry, I don't understand that yet.";
+        staticReplies[lowerInput] || "Sorry, I don't understand that yet. :)";
       setMessages((prev) => {
         const updated = [...prev];
         updated[updated.length - 1] = { sender: "bot", text: reply };
