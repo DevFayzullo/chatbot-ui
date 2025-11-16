@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import ChatWindow from "./components/ChatWindow";
 import ButtonGroup from "./components/ButtonGroup";
 import InputBox from "./components/InputBox";
-
+//dds
 export default function App() {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "Hello! How can I assist you today?" },
